@@ -2,6 +2,7 @@ package com.example;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 public class FelineTest {
 
@@ -31,5 +32,4 @@ public class FelineTest {
         int expectedKittensCount = 5;
         Assert.assertEquals(expectedKittensCount, actualKittensCount);
     }
-
 }

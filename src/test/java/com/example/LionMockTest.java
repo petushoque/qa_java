@@ -33,4 +33,14 @@ public class LionMockTest {
         List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         Assert.assertEquals(expectedFood, actualFood);
     }
+
+    @Test
+    public void getFamilyWorksCorrectly() throws Exception {
+
+        Lion lion = new Lion("Самка");
+        Mockito.when(feline.getFamily()).thenReturn("Кошачьи");
+        String actualFamily = feline.getFamily();
+        String expectedFamily = "Кошачьи";
+        Assert.assertEquals(expectedFamily, actualFamily);
+    }
 }
