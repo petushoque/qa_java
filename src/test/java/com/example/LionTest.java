@@ -8,8 +8,6 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class LionTest {
 
-    Feline feline;
-
     private final String sex;
     private final boolean expectedHasMane;
 
@@ -18,12 +16,11 @@ public class LionTest {
         this.expectedHasMane = expectedMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Test data : {0} - {1}")
     public static Object[][] lionGenders() {
         return new Object[][]{
                 {"Самец", true},
                 {"Самка", false},
-                {"Другое", "Другое"},
         };
     }
 
