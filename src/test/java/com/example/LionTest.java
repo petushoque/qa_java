@@ -16,12 +16,11 @@ public class LionTest {
         this.expectedHasMane = expectedMane;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Test data : {0} - {1}")
     public static Object[][] lionGenders() {
         return new Object[][]{
                 {"Самец", true},
                 {"Самка", false},
-                {"Другое", "Другое"},
         };
     }
 
