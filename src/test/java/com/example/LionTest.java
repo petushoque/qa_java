@@ -8,8 +8,6 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class LionTest {
 
-    Feline feline;
-
     private final String sex;
     private final boolean expectedHasMane;
 
