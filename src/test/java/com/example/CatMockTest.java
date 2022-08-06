@@ -23,4 +23,13 @@ public class CatMockTest {
         List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
         Assert.assertEquals(expectedFood, actualFood);
     }
+
+    @Test
+    public void getSoundWorksCorrectly() {
+
+        Cat cat = new Cat(feline);
+        String actualSound = cat.getSound();
+        String expectedSound = "Мяу";
+        Assert.assertEquals(expectedSound, actualSound);
+    }
 }
